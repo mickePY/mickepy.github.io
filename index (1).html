@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yves Aimé Ebanda — Data Analyst, BI, scoring, IA appliquée</title>
+<meta name="description" content="Portfolio de Yves Aimé Ebanda : data analyst BI, scoring et IA appliquée. Recherche une alternance M2.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F8F6F7;--ink:#241A1E;--mute:#6A5B61;--gold:#86652B;--rule:#D9C9A6;--wine:#3A0F1D;--rail:#3A0F1D;--rtx:#F3EDE2;--rdim:#CDBDB2;--rgold:#D2B27A;--tint:#EFE8E4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150A0F;--ink:#EFE6DC;--mute:#B4A39B;--gold:#D2B27A;--rule:#5A4528;--wine:#E9D9C0;--rail:#2A0A14;--tint:#24141B}}
+:root[data-theme="dark"]{--bg:#150A0F;--ink:#EFE6DC;--mute:#B4A39B;--gold:#D2B27A;--rule:#5A4528;--wine:#E9D9C0;--rail:#2A0A14;--tint:#24141B}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Jost,"Century Gothic","Avenir Next","Liberation Sans",Arial,sans-serif;font-size:18px;line-height:1.6;font-weight:400}
+.serif,h1,h2,.num{font-family:"Bodoni Moda","Bodoni 72",Didot,"Times New Roman",serif}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--rgold);outline-offset:4px}
+.shell{display:grid;grid-template-columns:360px minmax(0,1fr)}
+.railcol{background:var(--rail)}
+aside{position:sticky;top:0;padding:56px 40px 40px;color:var(--rtx);display:flex;flex-direction:column;gap:34px}
+aside h1{font-size:50px;line-height:.98;font-weight:700;letter-spacing:-.01em}
+aside h1 span{display:block}
+.role{color:var(--rgold);font-size:17px;line-height:1.5;margin-top:18px;font-weight:500}
+.role span{display:block}
+nav{display:flex;flex-direction:column;gap:10px;border-top:1px solid rgba(210,178,122,.35);padding-top:22px}
+nav a{text-decoration:none;color:var(--rdim);font-size:17px;width:max-content;border-bottom:1px solid transparent}
+nav a:hover{color:var(--rtx);border-color:var(--rgold)}
+.rcontact{font-size:16px;color:var(--rdim);line-height:1.8}
+.rcontact a{color:var(--rtx);text-decoration-color:var(--rgold);text-underline-offset:4px}
+main{padding:72px 64px 90px;max-width:900px}
+section{margin-bottom:84px}
+h2{font-size:34px;font-weight:500;line-height:1.1;margin-bottom:26px;letter-spacing:-.01em}
+.lede{font-family:"Bodoni Moda","Bodoni 72",Didot,serif;font-size:clamp(30px,4.4vw,48px);line-height:1.12;font-weight:500;letter-spacing:-.015em;max-width:15em;text-wrap:balance}
+.intro{margin-top:26px;max-width:34em;color:var(--mute)}
+.intro b{color:var(--ink);font-weight:500}
+details{border-top:1px solid var(--rule)}
+details:last-of-type{border-bottom:1px solid var(--rule)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:150px minmax(0,1fr) 28px;align-items:center;gap:18px;padding:22px 0}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:26px;color:var(--gold);justify-self:end;line-height:1}
+details[open] summary::after{content:"−"}
+.num{font-size:58px;line-height:1;font-style:italic;font-weight:600;color:var(--gold);letter-spacing:-.02em}
+.st{font-size:20px;font-weight:500;line-height:1.25}
+.st small{display:block;font-size:15px;font-weight:300;color:var(--mute);margin-top:3px}
+.det{padding:0 0 28px 168px;max-width:40em}
+.det dl{display:grid;grid-template-columns:90px 1fr;gap:6px 18px;font-size:17px}
+.det dt{color:var(--gold);font-weight:500}
+.bars{margin-top:22px;max-width:30em}
+.bar{display:grid;grid-template-columns:62px 1fr 38px;gap:12px;align-items:center;font-size:14px;color:var(--mute);margin:7px 0}
+.bar b{display:block;height:6px;background:var(--tint)}
+.bar i{display:block;height:6px;width:var(--w);background:var(--rule)}
+.bar i.on{background:var(--gold)}
+.bar em{font-style:normal;color:var(--ink);text-align:right}
+details[open] .bar i{animation:g .8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes g{from{width:0}}
+.note{font-size:13px;color:var(--mute);margin-top:6px}
+.tl{border-left:1px solid var(--rule);margin-left:6px;padding-left:34px}
+.ev{position:relative;margin-bottom:38px}
+.ev:before{content:"";position:absolute;left:-39px;top:11px;width:9px;height:9px;background:var(--gold);transform:rotate(45deg)}
+.ev .when{font-size:15px;color:var(--gold);font-weight:500}
+.ev h3{font-family:"Bodoni Moda","Bodoni 72",Didot,serif;font-size:26px;font-weight:700;line-height:1.2;margin:2px 0 8px}
+.ev ul{list-style:none;color:var(--mute);max-width:36em}
+.ev li{margin-bottom:5px;padding-left:20px;position:relative}
+.ev li:before{content:"";position:absolute;left:0;top:.8em;width:10px;height:1px;background:var(--gold)}
+.tools{display:grid;grid-template-columns:200px 1fr;gap:0;border-top:1px solid var(--rule)}
+.tools dt,.tools dd{padding:15px 0;border-bottom:1px solid var(--rule)}
+.tools dt{font-weight:500;color:var(--gold)}
+.tools dd{color:var(--mute)}
+.close{border-top:3px solid var(--gold);padding-top:30px}
+.close p{font-family:"Bodoni Moda","Bodoni 72",Didot,serif;font-size:clamp(26px,3.6vw,38px);line-height:1.18;max-width:17em;font-weight:500;text-wrap:balance}
+.close .links{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px 34px;font-size:18px}
+.close a{text-underline-offset:5px;text-decoration-color:var(--gold)}
+@media (max-width:900px){
+.shell{grid-template-columns:1fr}
+aside{position:static;padding:36px 24px 28px;gap:22px}
+aside h1{font-size:42px}
+aside h1 span{display:inline}
+nav{flex-direction:row;flex-wrap:wrap;gap:8px 22px;padding-top:16px}
+main{padding:48px 24px 70px}
+section{margin-bottom:60px}
+summary{grid-template-columns:104px minmax(0,1fr) 22px;gap:12px}
+.num{font-size:40px}
+.st{font-size:18px}
+.det{padding-left:0}
+.det dl{grid-template-columns:1fr;gap:0}
+.det dd{margin-bottom:10px}
+.tools{grid-template-columns:1fr}
+.tools dt{border-bottom:none;padding-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){details[open] .bar i{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="shell">
+<div class="railcol"><aside>
+  <div>
+    <h1><span>Yves</span> <span>Aimé</span> <span>Ebanda</span></h1>
+    <p class="role"><span>Data analyst</span><span>BI, scoring, IA appliquée</span></p>
+  </div>
+  <nav aria-label="Navigation">
+    <a href="#resultats">Résultats</a><a href="#parcours">Parcours</a><a href="#outils">Outils</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="rcontact">Boulogne-Billancourt<br><a href="mailto:ebanndayvez@gmail.com">ebanndayvez@gmail.com</a><br><a href="https://github.com/mickePY">github.com/mickePY</a></div>
+</aside></div>
+
+<main>
+<section>
+  <p class="lede">Je rends les chiffres fiables, puis je les rends utiles.</p>
+  <p class="intro">Étudiant en <b>Master Data Analyst à IA School</b> (M1 validé), j'ai travaillé auprès d'un client bancaire chez Capgemini Invent, construit un modèle de scoring crédit à 87 % de précision et livré des dashboards qui ont réduit de 60 % le temps de reporting. Je cherche une <b>alternance M2</b>.</p>
+</section>
+
+<section id="resultats">
+  <h2>Cinq résultats</h2>
+  <details open>
+    <summary><span class="num">87 %</span><span class="st">Scoring crédit<small>précision d'un modèle Random Forest</small></span></summary>
+    <div class="det"><dl><dt>Contexte</dt><dd>Environ 10 000 profils à classer selon leur risque.</dd><dt>Méthode</dt><dd>Classification par Random Forest, avec Python et Scikit-learn.</dd><dt>Résultat</dt><dd>87 % de précision.</dd></dl>
+    <div class="bars"><div class="bar"><span>Précision</span><b><i class="on" style="--w:87%"></i></b><em>87</em></div><p class="note">Sur une échelle de 100.</p></div></div>
+  </details>
+  <details>
+    <summary><span class="num">20 h</span><span class="st">Automatisation des flux<small>gagnées chaque semaine chez Capgemini Invent</small></span></summary>
+    <div class="det"><dl><dt>Contexte</dt><dd>Stage de consultant data analyst auprès d'un client bancaire, de juin à décembre 2023.</dd><dt>Méthode</dt><dd>Automatisation des flux de données avec Python et des API.</dd><dt>Résultat</dt><dd>20 heures gagnées par semaine. En parallèle : solutions BI déployées sous Tableau et SQL Server, indicateurs de performance pour les processus de crédit.</dd></dl></div>
+  </details>
+  <details>
+    <summary><span class="num">−60 %</span><span class="st">Pilotage de la performance réseau<small>de temps de reporting en moins</small></span></summary>
+    <div class="det"><dl><dt>Contexte</dt><dd>Un reporting long à produire pour piloter la performance d'un réseau.</dd><dt>Méthode</dt><dd>Trois dashboards Power BI, mesures DAX, données SQL.</dd><dt>Résultat</dt><dd>Temps de reporting réduit de 60 %. Documentation livrée et équipe formée.</dd></dl>
+    <div class="bars"><div class="bar"><span>Avant</span><b><i style="--w:100%"></i></b><em>100</em></div><div class="bar"><span>Après</span><b><i class="on" style="--w:40%"></i></b><em>40</em></div><p class="note">Temps de reporting, indice base 100.</p></div></div>
+  </details>
+  <details>
+    <summary><span class="num">+25 %</span><span class="st">Stage chez Carrefour Market<small>d'efficacité opérationnelle</small></span></summary>
+    <div class="det"><dl><dt>Contexte</dt><dd>Des données opérationnelles hétérogènes.</dd><dt>Méthode</dt><dd>Nettoyage et consolidation, puis création de tableaux de bord.</dd><dt>Résultat</dt><dd>+25 % d'efficacité opérationnelle.</dd></dl>
+    <div class="bars"><div class="bar"><span>Avant</span><b><i style="--w:80%"></i></b><em>100</em></div><div class="bar"><span>Après</span><b><i class="on" style="--w:100%"></i></b><em>125</em></div><p class="note">Efficacité opérationnelle, indice base 100.</p></div></div>
+  </details>
+  <details>
+    <summary><span class="num">+12 %</span><span class="st">Marketing analytics et fidélisation<small>de conversion</small></span></summary>
+    <div class="det"><dl><dt>Contexte</dt><dd>Environ 15 000 membres et 6 000 avis clients à exploiter.</dd><dt>Méthode</dt><dd>Segmentation K-Means et analyse de sentiment (NLP).</dd><dt>Résultat</dt><dd>+12 % de conversion.</dd></dl>
+    <div class="bars"><div class="bar"><span>Avant</span><b><i style="--w:89%"></i></b><em>100</em></div><div class="bar"><span>Après</span><b><i class="on" style="--w:100%"></i></b><em>112</em></div><p class="note">Taux de conversion, indice base 100.</p></div></div>
+  </details>
+</section>
+
+<section id="parcours">
+  <h2>Parcours</h2>
+  <div class="tl">
+    <div class="ev"><div class="when">En cours</div><h3>Master Data Analyst, IA School</h3><ul><li>Boulogne-Billancourt, première année validée.</li><li>Recherche d'une alternance pour la deuxième année.</li></ul></div>
+    <div class="ev"><div class="when">Juin – décembre 2023, Paris</div><h3>Capgemini Invent, consultant data analyst (stage)</h3><ul><li>Déploiement de solutions BI pour un client bancaire (Tableau, SQL Server).</li><li>Construction d'indicateurs de performance pour l'optimisation des processus de crédit.</li><li>Automatisation des flux de données (Python et API) : 20 h gagnées par semaine.</li></ul></div>
+    <div class="ev"><div class="when">Stage</div><h3>Carrefour Market</h3><ul><li>Nettoyage et consolidation de données hétérogènes.</li><li>Création de tableaux de bord, +25 % d'efficacité opérationnelle.</li></ul></div>
+  </div>
+</section>
+
+<section id="outils">
+  <h2>Outils</h2>
+  <dl class="tools">
+    <dt>Data et programmation</dt><dd>Python (Pandas, NumPy, Scikit-learn, TensorFlow), SQL (SQL Server, MySQL, PostgreSQL), MongoDB</dd>
+    <dt>BI et visualisation</dt><dd>Power BI (DAX), Tableau, R Shiny, Matplotlib</dd>
+    <dt>IA appliquée</dt><dd>Scoring, classification, clustering, analyse de sentiment (NLP)</dd>
+    <dt>Automatisation</dt><dd>Flux de données Python et API REST, web scraping</dd>
+    <dt>Méthode</dt><dd>Git et GitHub, documentation, formation d'équipe</dd>
+  </dl>
+</section>
+
+<section id="contact" class="close">
+  <p>Disponible dès maintenant pour une alternance M2 en data analyse, BI, risque et IA appliquée.</p>
+  <div class="links"><a href="mailto:ebanndayvez@gmail.com">ebanndayvez@gmail.com</a><a href="https://github.com/mickePY">github.com/mickePY</a></div>
+</section>
+</main>
+</div>
+</body>
+</html>
